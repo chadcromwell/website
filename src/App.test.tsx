@@ -1,9 +1,13 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { getByTitle, render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+test("renders hello react", () => {
+  const { getByText, getByTitle } = render(<App />);
+  const linkElement = getByText(/Hello React/i);
   expect(linkElement).toBeInTheDocument();
+  const label = getByTitle("Current Count");
+  expect(label).toBeInTheDocument();
+  const counter = getByTitle("Current Count");
+  expect(counter).toHaveTextContent("0");
 });
