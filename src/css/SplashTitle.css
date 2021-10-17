@@ -1,0 +1,46 @@
+.splashTextStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line1 {
+    color: #80ffff;
+    font-family: Roboto Mono, monospace;
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding: 0;
+    line-height: 4rem;
+}
+
+.line2 {
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 5rem;
+    padding: 0;
+    line-height: 4rem;
+}
+
+.line2FullStop {
+    color: #ffffff;
+    font-family: Overpass Mono, monospace;
+    font-size: 4rem;
+    margin-left: -.7rem; /*Not sure if this will look okay on random devices*/
+    line-height: 1.3rem;
+}
+
+.line3 {
+    color: #5a6d6e;
+    font-family: Montserrat, sans-serif;
+    font-size: 5rem;
+    padding: 0;
+    line-height: 4.5rem;
+}
+
+.line4 {
+    color: #ffffff;
+    font-family: Overpass Mono, monospace;
+    line-height: 4rem;
+    font-size: 1rem;
+    padding: 0;
+}
