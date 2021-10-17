@@ -13,6 +13,7 @@ const NavBar = () => {
 
   // Whenever the user scrolls, this is called
   const controlNavBar = () => {
+    console.log("controlNavBar called");
     // If te current scroll is less than the old scroll, the user has scrolled up so show navbar
     if (!goingUp && window.scrollY < scroll) {
       goingUp = true;
@@ -29,58 +30,61 @@ const NavBar = () => {
 
   // Call controlNavBar on each render
   useEffect(() => {
+    console.log("useEffect called");
     window.addEventListener("scroll", controlNavBar);
   }, []);
 
   const nodeRef = useRef(null);
-  if (show) {
-    return (
-        <Navbar
+  return (
+    <TransitionGroup component={null}>
+      {show && (
+        <CSSTransition classNames="navbar" timeout={300}>
+          <Navbar
             collapseOnSelect
             expand="lg"
             bg="dark"
             variant="dark"
             sticky="top"
-        >
-          <Container className="justify-content-end">
-            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-            <Navbar.Collapse
+          >
+            <Container className="justify-content-end">
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse
                 id="responsive-navbar-nav"
                 className="justify-content-end"
-            >
-              <Nav className="justify-content-end roboto-bold">
-                <Nav.Link href="#about">
-                <span className="roboto-thin" style={{color: "#80ffff"}}>
-                  01.
-                </span>
-                  About
-                </Nav.Link>
-                <Nav.Link href="#experience">
-                <span className="roboto-thin" style={{color: "#80ffff"}}>
-                  02.
-                </span>
-                  Experience
-                </Nav.Link>
-                <Nav.Link href="#portfolio">
-                <span className="roboto-thin" style={{color: "#80ffff"}}>
-                  03.
-                </span>
-                  Portfolio
-                </Nav.Link>
-                <Nav.Link href="#contact">
-                <span className="roboto-thin" style={{color: "#80ffff"}}>
-                  04.
-                </span>
-                  Contact
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-    );
-  } else {
-    return <Navbar />
-  }
+              >
+                <Nav className="justify-content-end roboto-bold">
+                  <Nav.Link href="#about">
+                    <span className="roboto-thin" style={{ color: "#80ffff" }}>
+                      01.
+                    </span>
+                    About
+                  </Nav.Link>
+                  <Nav.Link href="#experience">
+                    <span className="roboto-thin" style={{ color: "#80ffff" }}>
+                      02.
+                    </span>
+                    Experience
+                  </Nav.Link>
+                  <Nav.Link href="#portfolio">
+                    <span className="roboto-thin" style={{ color: "#80ffff" }}>
+                      03.
+                    </span>
+                    Portfolio
+                  </Nav.Link>
+                  <Nav.Link href="#contact">
+                    <span className="roboto-thin" style={{ color: "#80ffff" }}>
+                      04.
+                    </span>
+                    Contact
+                  </Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+        </CSSTransition>
+      )}
+    </TransitionGroup>
+  );
 };
 
 export default NavBar;
