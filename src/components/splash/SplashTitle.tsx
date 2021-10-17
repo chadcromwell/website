@@ -13,7 +13,10 @@ const SplashTitle = () => {
         </span>
       </div>
       <div className={"line3"}>
-        I love making things.
+        I love making things
+          <span className={"line3FullStop"}>
+          .
+        </span>
       </div>
       <div className={"line4"}>
         I'm a Full Stack Software Developer from Ontario, Canada.

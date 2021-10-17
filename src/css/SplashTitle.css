@@ -37,6 +37,14 @@
     line-height: 4.5rem;
 }
 
+.line3FullStop {
+    color: #5a6d6e;
+    font-family: Overpass Mono, monospace;
+    font-size: 4rem;
+    margin-left: -.9rem; /*Not sure if this will look okay on random devices*/
+    line-height: 1.3rem;
+}
+
 .line4 {
     color: #ffffff;
     font-family: Overpass Mono, monospace;
