@@ -35,7 +35,7 @@ const NavBar = () => {
   }, []);
 
   const nodeRef = useRef(null);
-  return (
+  return ( //TODO current issue is the div disappears, so it causes a rerender of the whole page which causes a loop. Need to probably swap to conditional rendering with ifs so we still have an empty div there.
     <TransitionGroup component={null}>
       {show && (
         <CSSTransition classNames="navbar" timeout={300}>
