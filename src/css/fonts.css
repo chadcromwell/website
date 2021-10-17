@@ -1,0 +1,25 @@
+.roboto {
+    font-family: 'Roboto Mono', monospace;
+}
+.roboto-thin {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+.roboto-bold {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+.overpass {
+    font-family: 'Overpass Mono', monospace;
+    line-height: 1.3rem;
+}
+.overpass-big {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+}
