@@ -1,4 +1,4 @@
-import "../../css/SplashTitle.css";
+import "../../css/SplashTitle/SplashTitle.css";
 
 const SplashTitle = () => {
   return (

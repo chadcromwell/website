@@ -1,6 +1,6 @@
 import React from "react";
 import SplashTitle from "./components/splash/SplashTitle";
-import "./css/App.css";
+import "./css/App/App.css";
 
 const initialState = { count: 0 };
 export type CounterState = Readonly<typeof initialState>;
