@@ -1,0 +1,50 @@
+.sectionTitle {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.titleNumber {
+    color: #80ffff;
+}
+
+.bodyText {
+    color: #ffffff;
+    max-width: 55rem;
+}
+
+.listOneHeader {
+    color: #ffffff;
+}
+
+.listOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    color: #ffffff;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 1rem;
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 4rem;
+}
+
+.dice {
+    width: 1rem;
+    height: 1rem;
+}
+
+.bulletLine {
+    margin-top: 1rem;
+}

@@ -36,7 +36,7 @@ const NavBar = () => {
         <Navbar
           collapseOnSelect
           expand="lg"
-          bg="dark"
+          className="navbarBG"
           variant="dark"
           sticky="top"
           style={{
