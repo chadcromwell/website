@@ -1,5 +1,29 @@
 .aboutMe {
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 40rem;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 25rem;
 }
 
 .sectionTitle {
@@ -13,7 +37,6 @@
 
 .bodyText {
     color: #ffffff;
-    max-width: 55rem;
 }
 
 .listOneHeader {
@@ -51,4 +74,15 @@
 
 .bulletLine {
     margin-top: 1rem;
+}
+
+.whatImWorkingWithLately {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.photo {
+    margin-left: 2rem;
 }
