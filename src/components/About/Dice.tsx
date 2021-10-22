@@ -5,18 +5,13 @@ interface props {
   scale?: string;
 }
 
-const Dice = ({
-  marginRight = "0rem",
-  scale = "1rem",
-}: props) => {
+const Dice = ({ marginRight = "0rem", scale = "1rem" }: props) => {
   let style = {
     color: "rgb(90,109,110)",
     marginRight: marginRight,
     width: scale,
     height: scale,
   };
-
-  console.log(style);
 
   return (
     <svg

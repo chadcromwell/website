@@ -38,8 +38,11 @@ const NavBar = () => {
           expand="lg"
           className="navbarBG"
           variant="dark"
-          sticky="top"
           style={{
+            position: "fixed",
+            top: 0,
+            width: "100%",
+            zIndex: 10,
             opacity: opacity,
             transition: "opacity 300ms ease, transform 300ms",
           }}

@@ -33,7 +33,7 @@ const About = () => {
         <div className={"listOneHeader overpass"}>
           Here's what I've been working with lately:
         </div>
-        <div className={"listOne overpass"}>
+        <div className={"list overpass"}>
           <div className={"leftColumn"}>
             <span className={"bulletLine"}>
               <Dice marginRight={"1rem"} scale={"1.5rem"}/>

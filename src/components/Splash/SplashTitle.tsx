@@ -2,7 +2,7 @@ import "../../css/SplashTitle/SplashTitle.css";
 
 const SplashTitle = () => {
   return (
-    <div className={"splashText"}>
+    <div className={"splashTitle"}>
       <div className={"line1"}>Hi, I'm</div>
       <div className={"line2"}>
         Chad Cromwell
