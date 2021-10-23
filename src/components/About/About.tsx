@@ -12,9 +12,9 @@ const rightList: string[] = [];
 const list = [
   "Java",
   "Docker",
+  "TypeScript",
   "React",
-  "JavaScript",
-  "Node",
+  "MongoDB",
   "Meteor",
   "Python",
   "AWS",

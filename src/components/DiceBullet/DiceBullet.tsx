@@ -21,8 +21,8 @@ const DiceBullet = ({ spacing = "1rem", scale = "1.5rem", textArray }: props) =>
   };
 
   // Iterates through each text entry in the textArray and renders a new bullet for each
-  return <> {textArray.map(text => (
-    <span className={"bulletLine"} style={style as React.CSSProperties}>
+  return <> {textArray.map((text, index) => (
+    <span className={"bulletLine"} style={style as React.CSSProperties} key={index}>
       <Dice marginRight={spacing} scale={scale} />
       <div className={"text"} style={{ marginRight: "1rem" }}>
         {text}
