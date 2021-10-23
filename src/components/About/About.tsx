@@ -1,9 +1,22 @@
 import React from "react";
 import "../../css/fonts.css";
 import "../../css/About/About.css";
-import Dice from "./Dice";
+import DiceBullet from "../DiceBullet/DiceBullet";
 import chadCromwellPhoto from "../../images/me.jpg";
 
+const leftList = [
+  "Java",
+  "Meteor",
+  "JavaScript",
+  "Python",
+]
+
+const rightList= [
+  "Docker",
+  "React",
+  "Node",
+  "AWS",
+]
 const About = () => {
   return (
     <div className={"aboutMe"}>
@@ -35,44 +48,14 @@ const About = () => {
           <div className={"listOneHeader overpass"}>
             What I've been working with lately:
           </div>
-          <div className={"list overpass"}>
-            <div className={"leftColumn"}>
-              <span className={"bulletLine"}>
-                <Dice marginRight={"1rem"} scale={"1.5rem"} />
-                Java
-              </span>
-              <span className={"bulletLine"}>
-                <Dice marginRight={"1rem"} scale={"1.5rem"} />
-                Docker
-              </span>
-              <span className={"bulletLine"}>
-                <Dice marginRight={"1rem"} scale={"1.5rem"} />
-                Meteor
-              </span>
-              <span className={"bulletLine"}>
-                <Dice marginRight={"1rem"} scale={"1.5rem"} />
-                React
-              </span>
+            <div className={"list overpass"}>
+              <div className={"leftColumn"}>
+                <DiceBullet textArray={leftList} />
+              </div>
+              <div className={"rightColumn"}>
+                <DiceBullet textArray={rightList} />
+              </div>
             </div>
-            <div className={"rightColumn"}>
-              <span className={"bulletLine"}>
-                <Dice marginRight={"1rem"} scale={"1.5rem"} />
-                JavaScript
-              </span>
-              <span className={"bulletLine"}>
-                <Dice marginRight={"1rem"} scale={"1.5rem"} />
-                Node
-              </span>
-              <span className={"bulletLine"}>
-                <Dice marginRight={"1rem"} scale={"1.5rem"} />
-                Python
-              </span>
-              <span className={"bulletLine"}>
-                <Dice marginRight={"1rem"} scale={"1.5rem"} />
-                AWS
-              </span>
-            </div>
-          </div>
         </div>
       </div>
       <div className={"rightContent"}>
