@@ -4,20 +4,41 @@ import "../../css/About/About.css";
 import DiceBullet from "../DiceBullet/DiceBullet";
 import chadCromwellPhoto from "../../images/me.jpg";
 
-const leftList = [
-  "Java",
-  "Meteor",
-  "JavaScript",
-  "Python",
-]
+const leftList: string[] = [];
 
-const rightList= [
+const rightList: string[] = [];
+
+// What I'm currently working with, ranked
+const list = [
+  "Java",
   "Docker",
   "React",
+  "JavaScript",
   "Node",
+  "Meteor",
+  "Python",
   "AWS",
 ]
+
+// Sorts the list into two arrays so they are formatted in order for rendering
+const sortIntoTwoArrays = () => {
+  let lPointer = 0;
+  let rPointer = 0;
+
+  for (let i = 0; i < list.length; i++) {
+    if (i%2 === 0) {
+      leftList[lPointer++] = list[i];
+    } else {
+      rightList[rPointer++] = list[i];
+    }
+  }
+}
+
+// About component
 const About = () => {
+
+  sortIntoTwoArrays();
+
   return (
     <div className={"aboutMe"}>
       <div className={"leftContent"}>
