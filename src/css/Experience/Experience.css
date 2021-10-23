@@ -1,3 +1,11 @@
 .experience {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.sectionTitle {
+    margin-bottom: 2rem;
 }
