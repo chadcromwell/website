@@ -4,8 +4,8 @@ import "../../css/About/About.css";
 import DiceBullet from "../DiceBullet/DiceBullet";
 import chadCromwellPhoto from "../../images/me.jpg";
 
+// Bullet lists to hold what I've been currently working with
 const leftList: string[] = [];
-
 const rightList: string[] = [];
 
 // What I'm currently working with, ranked
@@ -18,27 +18,28 @@ const list = [
   "Meteor",
   "Python",
   "AWS",
-]
+];
 
 // Sorts the list into two arrays so they are formatted in order for rendering
 const sortIntoTwoArrays = () => {
   let lPointer = 0;
   let rPointer = 0;
 
+  // Iterate the list
   for (let i = 0; i < list.length; i++) {
-    if (i%2 === 0) {
+    // If even index, move to left list
+    if (i % 2 === 0) {
       leftList[lPointer++] = list[i];
     } else {
+      // If odd index, move to right list
       rightList[rPointer++] = list[i];
     }
   }
-}
+};
 
 // About component
 const About = () => {
-
   sortIntoTwoArrays();
-
   return (
     <div className={"aboutMe"}>
       <div className={"leftContent"}>
@@ -69,14 +70,14 @@ const About = () => {
           <div className={"listOneHeader overpass"}>
             What I've been working with lately:
           </div>
-            <div className={"list overpass"}>
-              <div className={"leftColumn"}>
-                <DiceBullet textArray={leftList} />
-              </div>
-              <div className={"rightColumn"}>
-                <DiceBullet textArray={rightList} />
-              </div>
+          <div className={"list overpass"}>
+            <div className={"leftColumn"}>
+              <DiceBullet textArray={leftList} textMarginTop={"0rem"} diceMarginTop={"0rem"} scale={"1rem"} width={"50%"}/>
             </div>
+            <div className={"rightColumn"}>
+              <DiceBullet textArray={rightList} textMarginTop={"0rem"} diceMarginTop={"0rem"} scale={"1rem"} width={"50%"}/>
+            </div>
+          </div>
         </div>
       </div>
       <div className={"rightContent"}>

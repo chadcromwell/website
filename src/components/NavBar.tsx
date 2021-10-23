@@ -28,7 +28,7 @@ const NavBar = () => {
   // Call controlNavBar on each render
   useEffect(() => {
     window.addEventListener("scroll", controlNavBar);
-  }, []);
+  });
 
   return (
     <TransitionGroup component={null}>

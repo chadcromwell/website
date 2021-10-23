@@ -1,13 +1,15 @@
 import React from "react";
 
 interface props {
+  marginTop?: string;
   marginRight?: string;
   scale?: string;
 }
 
-const Dice = ({ marginRight = "0rem", scale = "1rem" }: props) => {
+const Dice = ({ marginTop = "0rem", marginRight = "0rem", scale = "1rem" }: props) => {
   let style = {
     color: "rgb(90,109,110)",
+    marginTop: marginTop,
     marginRight: marginRight,
     width: scale,
     height: scale,

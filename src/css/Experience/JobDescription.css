@@ -1,8 +1,9 @@
 .content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
+    min-height: 22rem;
 }
 
 .companyButtons {
@@ -10,12 +11,13 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    min-width: 10rem;
 }
 
 .jobDescription {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     max-width: 60rem;
 }
