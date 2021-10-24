@@ -3,6 +3,10 @@ import "../../css/Experience/JobDescription.css";
 import "../../css/fonts.css";
 import DiceBullet from "../DiceBullet/DiceBullet";
 
+/**
+ * The content.
+ * @constructor
+ */
 const JobDescription = () => {
   let housescopeTitle = "Full Stack Software Developer";
   let housescopeDates = "Oct 2020 - Current";
@@ -44,46 +48,118 @@ const JobDescription = () => {
     />
   );
 
+  // Default button style
+  const defaultButtonStyle: object = {
+    backgroundColor: "rgb(0,0,0,0)",
+    border: "1px solid #5a6d6e",
+    borderRadius: "5px",
+    color: "white",
+    textAlign: "center",
+    texDecoration: "none",
+    height: "100%",
+    marginRight: "1rem",
+  };
+
+  // Selected button style
+  const selectedButtonStyle: object = {
+    backgroundColor: "rgb(90,109,110,.25)",
+    border: "1px solid #5a6d6e",
+    borderRadius: "5px",
+    boxShadow: "1px 1px 10px 0px #5a6d6e",
+    color: "white",
+    textAlign: "center",
+    texDecoration: "none",
+    height: "100%",
+    marginRight: "1rem",
+  };
+
+  // Hooks
   const [jobTitle, setJobTitle] = useState(housescopeTitle);
   const [jobDates, setJobDates] = useState(housescopeDates);
   const [jobText, setJobText] = useState(housescopeText);
+  const [button0Style, setButton0Style] = useState(selectedButtonStyle);
+  const [button1Style, setButton1Style] = useState(defaultButtonStyle);
+  const [button2Style, setButton2Style] = useState(defaultButtonStyle);
 
-  const changeJob = (job: number) => {
+  /**
+   * Changes the job information that is displayed.
+   * @param button The button that is clicked.
+   */
+  const changeJob = (button: number) => {
     // If button 0 is clicked, show Housescope details
-    if (job === 0) {
+    if (button === 0) {
       setJobTitle(housescopeTitle);
       setJobDates(housescopeDates);
       setJobText(housescopeText);
     }
 
     // If button 1 is clicked, show VIP Research Group details
-    if (job === 1) {
+    if (button === 1) {
       setJobTitle(VIPResearchGroupTitle);
       setJobDates(VIPResearchGroupDates);
       setJobText(VIPResearchGroupText);
     }
 
     // If button 2 is clicked, show Black Media details
-    if (job === 2) {
+    if (button === 2) {
       setJobTitle(blackMediaTitle);
       setJobDates(blackMediaDates);
       setJobText(blackMediaText);
     }
   };
 
+  /**
+   * Changes the CSS of a button to show it as selected and changes the rest back to default.
+   * @param button The button to change.
+   */
+  const selectButton = (button: number) => {
+
+    // Set default button styles
+    for (let i = 0; i < 3; i++) {
+      setButton0Style(defaultButtonStyle);
+      setButton1Style(defaultButtonStyle);
+      setButton2Style(defaultButtonStyle);
+    }
+
+    // Set selected button to selected style
+    if (button === 0) {
+      setButton0Style(selectedButtonStyle);
+    } else if (button === 1) {
+      setButton1Style(selectedButtonStyle);
+    } else {
+      setButton2Style(selectedButtonStyle);
+    }
+  };
+
+  /**
+   * Changes the job decription and updates the button that is clicked.
+   * @param button The button that is clicked.
+   */
+  const buttonClick = (button: number) => {
+    changeJob(button);
+    selectButton(button);
+  }
+
   return (
     <div className={"content"}>
       <div className={"companyButtons"}>
-        <button onClick={() => changeJob(0)} className={"housescopeButton"}>
+        <button
+          onClick={() => buttonClick(0)}
+          style={button0Style}
+        >
           Housescope
         </button>
         <button
-          onClick={() => changeJob(1)}
-          className={"VIPResearchGroupButton"}
+          onClick={() => buttonClick(1)}
+          style={button1Style}
+          className={"middleButton"}
         >
           VIP Research Group
         </button>
-        <button onClick={() => changeJob(2)} className={"blackMediaButton"}>
+        <button
+          onClick={() => buttonClick(2)}
+          style={button2Style}
+        >
           Black Media
         </button>
       </div>
