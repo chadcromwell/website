@@ -1,3 +1,47 @@
 .contact {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.sectionTitle {
+    color: #ffffff;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.titleNumber {
+    color: #80ffff;
+    font-size: 2rem;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.emailButton {
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #5a6d6e;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    height: 100%;
+    min-width: 6rem;
+    min-height: 3rem;
+    margin-top: 2rem;
 }
