@@ -2,7 +2,8 @@ import React from "react";
 import "../../css/fonts.css";
 import "../../css/About/About.css";
 import DiceBullet from "../DiceBullet/DiceBullet";
-import chadCromwellPhoto from "../../images/me.jpg";
+import chadCromwellPhoto from "../../images/me2.jpg";
+import HorizontalLine from "../HorizontalLine/HorizontalLine";
 
 // Bullet lists to hold what I've been currently working with
 const leftList: string[] = [];
@@ -44,10 +45,9 @@ const About = () => {
     <div className={"aboutMe"}>
       <div className={"leftContent"}>
         <div className={"sectionHeader"}>
-          <div className={"sectionTitle roboto-bold"}>
-            <span className={"titleNumber roboto-thin"}>01. </span>
-            About Me
-          </div>
+          <div className={"titleNumber roboto-thin"}>01.</div>
+          <div className={"sectionTitle roboto-bold"}>About Me</div>
+          <HorizontalLine />
         </div>
         <div className={"bodyText overpass"}>
           My name is Chad Cromwell. I'm a software developer from Ontario,
@@ -59,10 +59,10 @@ const About = () => {
           I currently work for Housescope as a Full Stack Software Developer
           designing and developing a radiation dose management system for
           medical physicists. The software gathers data from medical imaging
-          equipment, maps protocols through machine learning and OCR, aggregates
-          the data, performs analytics, and warns of outliers to enable
-          hospitals and healthcare networks to be compliant with radiation dose
-          management standards.
+          equipment, uses OCR to read dose sheets, maps protocols through
+          machine learning, aggregates data, performs analytics, and warns of
+          outliers to enable hospitals and healthcare networks to be compliant
+          with radiation dose management standards.
           <br />
           <br />
         </div>
@@ -72,10 +72,22 @@ const About = () => {
           </div>
           <div className={"list overpass"}>
             <div className={"leftColumn"}>
-              <DiceBullet textArray={leftList} textMarginTop={"0rem"} diceMarginTop={"0rem"} scale={"1rem"} width={"50%"}/>
+              <DiceBullet
+                textArray={leftList}
+                textMarginTop={"0rem"}
+                diceMarginTop={"0rem"}
+                scale={"1rem"}
+                width={"50%"}
+              />
             </div>
             <div className={"rightColumn"}>
-              <DiceBullet textArray={rightList} textMarginTop={"0rem"} diceMarginTop={"0rem"} scale={"1rem"} width={"50%"}/>
+              <DiceBullet
+                textArray={rightList}
+                textMarginTop={"0rem"}
+                diceMarginTop={"0rem"}
+                scale={"1rem"}
+                width={"50%"}
+              />
             </div>
           </div>
         </div>

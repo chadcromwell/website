@@ -26,13 +26,21 @@ img {
     max-width: 25rem;
 }
 
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .sectionTitle {
     color: #ffffff;
     font-size: 2rem;
+    margin-left: 1rem;
 }
 
 .titleNumber {
     color: #80ffff;
+    font-size: 2rem;
 }
 
 .bodyText {
