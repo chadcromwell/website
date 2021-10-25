@@ -13,13 +13,14 @@ const JobDescription = () => {
   let housescopeText = (
     <DiceBullet
       textArray={[
-        "Refactored edge server monolith into a highly-scalable Dockerized microservice architecture",
-        "Increased cloud server's connection efficiency by 98.3% leading to a 58x increase in throughput of data from edge servers",
-        "Lowered cloud server's peak CPU usage by 60% and overall average CPU usage by 92%",
-        "Reduced study export time by 96%",
-        "Refactored caching to reduce average UI CPU load from 34% to effectively 0%",
-        "Implemented and maintained load testing capabilities through AWS EC2. Reducing load testing set up times by 96%",
-        "Led technical interviews and assisted in hiring decisions as part of the hiring committee",
+        "Refactored edge server monolith into a highly-scalable Dockerized microservice architecture.",
+        "Increased cloud server's connection efficiency by 98.3% leading to a 58x increase in throughput of data from edge servers.",
+        "Lowered cloud server's peak CPU usage by 60% and overall average CPU usage by 92%.",
+        "Reduced study export time by 96%.",
+        "Refactored caching to reduce average UI CPU load from 34% to effectively 0%.",
+        "Implemented and maintained load testing capabilities through AWS EC2. Reducing load testing set up times by 96%.",
+        "Led technical interviews and assisted in hiring decisions as part of the hiring committee.",
+        "Tech stack: Java, Docker, JavaScript, Node, Python, Tensorflow, MongoDB, Meteor, Galaxy, AWS, Atlas, Shell Scripting, Microservice Architecture.",
       ]}
     />
   );
@@ -29,9 +30,13 @@ const JobDescription = () => {
   let VIPResearchGroupText = (
     <DiceBullet
       textArray={[
-        "Developing three new features: interactive leaderboard, statistics dashboard, and card collection book",
-        "Working in a team of distributed developers with version control",
-        "Creating standalone features which were integrated into the existing system",
+        "Developed an interactive leaderboard with a search function that ranked users globally based off of user-selected metrics.",
+        "Developed a statistics dashboard that gave users the ability to view their performance statistics and player progression.",
+        "Developed a card collection book that gave users the ability to browse all of the cards they owned and have yet to collect with various filters, search, and history function.",
+        "Backend development for user authentication, analyzing player statistics, and gathering user data from SQL database.",
+        "Worked in a remote team of globally distributed developers.",
+        "Responsible for establishing version control workflow for the team in order to improve team collaboration and productivity.",
+        "Tech stack: JavaScript, PHP, HTML5, CSS3, Bootstrap, MySQL, and AJAX with JSON.",
       ]}
     />
   );
@@ -41,16 +46,17 @@ const JobDescription = () => {
   let blackMediaText = (
     <DiceBullet
       textArray={[
-        "Meeting with various clients, analyzing their requirements, and developing websites that meet those needs",
-        "Designing effective marketing materials and strategies, both web and print",
-        "Photo, film, and audio production for clients and live events",
+        "Met with various clients, analyzed their requirements, and developed websites to meet their needs.",
+        "Designed effective marketing materials and strategies for both web and print.",
+        "Photo, film, and audio production for clients and live events.",
+        "Tech stack: JavaScript, PHP, HTML, CSS, Joomla, WordPress, MySQL.",
       ]}
     />
   );
 
   // Default button style
   const defaultButtonStyle: object = {
-    backgroundColor: "rgb(0,0,0,0)",
+    backgroundColor: "rgba(0,0,0,0)",
     border: "1px solid #5a6d6e",
     borderRadius: "5px",
     color: "white",
@@ -62,7 +68,7 @@ const JobDescription = () => {
 
   // Selected button style
   const selectedButtonStyle: object = {
-    backgroundColor: "rgb(90,109,110,.25)",
+    backgroundColor: "rgba(90,109,110,.25)",
     border: "1px solid #5a6d6e",
     borderRadius: "5px",
     boxShadow: "1px 1px 10px 0px #5a6d6e",
@@ -113,7 +119,6 @@ const JobDescription = () => {
    * @param button The button to change.
    */
   const selectButton = (button: number) => {
-
     // Set default button styles
     for (let i = 0; i < 3; i++) {
       setButton0Style(defaultButtonStyle);
@@ -138,15 +143,12 @@ const JobDescription = () => {
   const buttonClick = (button: number) => {
     changeJob(button);
     selectButton(button);
-  }
+  };
 
   return (
     <div className={"content"}>
       <div className={"companyButtons"}>
-        <button
-          onClick={() => buttonClick(0)}
-          style={button0Style}
-        >
+        <button onClick={() => buttonClick(0)} style={button0Style}>
           Housescope
         </button>
         <button
@@ -156,10 +158,7 @@ const JobDescription = () => {
         >
           VIP Research Group
         </button>
-        <button
-          onClick={() => buttonClick(2)}
-          style={button2Style}
-        >
+        <button onClick={() => buttonClick(2)} style={button2Style}>
           Black Media
         </button>
       </div>
