@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    min-height: 25rem;
+}
+
+.companyButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-width: 10rem;
+}
+
+.jobDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 60rem;
+}
+
+.title {
+    color: white;
+}
+
+.dates {
+    color: white;
+}
+
+.text {
+    color: white;
+}
+
+.middleButton {
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}

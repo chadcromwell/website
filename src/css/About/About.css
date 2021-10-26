@@ -1,0 +1,88 @@
+.aboutMe {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 40rem;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.chadPhoto {
+    border-radius: 50%;
+    max-width: 25rem;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.sectionTitle {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.titleNumber {
+    color: #80ffff;
+    font-size: 2rem;
+}
+
+.bodyText {
+    color: #ffffff;
+}
+
+.listOneHeader {
+    color: #ffffff;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #ffffff;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 4rem;
+}
+
+.whatImWorkingWithLately {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.photo {
+    margin-left: 2rem;
+}
