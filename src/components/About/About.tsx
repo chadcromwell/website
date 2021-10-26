@@ -2,7 +2,7 @@ import React from "react";
 import "../../css/fonts.css";
 import "../../css/About/About.css";
 import DiceBullet from "../DiceBullet/DiceBullet";
-import chadCromwellPhoto from "../../images/me2.jpg";
+import chadCromwellPhoto from "../../images/chadcromwell.jpg";
 import HorizontalLine from "../HorizontalLine/HorizontalLine";
 
 // Bullet lists to hold what I've been currently working with
