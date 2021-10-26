@@ -170,10 +170,6 @@ const items = [
                 title: "Video demo",
                 link: "https://youtu.be/RqYTKjAFJuA",
             },
-            {
-                title: "Play online",
-                link: "http://www.chadcromwell.com/ants/",
-            },
         ],
     },
 ];
