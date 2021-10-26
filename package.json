@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage": "http://www.chadcromwell.com/",
+  "homepage": "http://www.chadcromwell.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
