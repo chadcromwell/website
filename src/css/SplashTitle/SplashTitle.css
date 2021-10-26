@@ -33,6 +33,7 @@
     font-size: 5rem;
     padding: 0;
     line-height: 4.5rem;
+    margin-bottom: 1rem;
 }
 
 .line3FullStop {
@@ -41,12 +42,12 @@
     font-size: 4rem;
     margin-left: -.9rem; /*Not sure if this will look okay on random devices*/
     line-height: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .line4 {
     color: #ffffff;
     font-family: Overpass Mono, monospace;
-    line-height: 4rem;
     font-size: 1rem;
     padding: 0;
 }

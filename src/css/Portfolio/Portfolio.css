@@ -22,3 +22,41 @@
     color: #80ffff;
     font-size: 2rem;
 }
+
+.itemsFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 70rem;
+}
+
+.portfolioItemBox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 20rem;
+    min-height: 28rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.portfolioItemImage {
+    max-width: 20rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.portfolioItemTitle {
+    margin: 1rem;
+
+}
+
+.portfolioItemDescription {
+    margin: 1rem;
+}
+
+.portfolio-roboto-bold {
+    font-weight: 900;
+    font-size: 1.5rem;
+}

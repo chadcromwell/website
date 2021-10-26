@@ -5,6 +5,7 @@ import Experience from "./components/Experience/Experience";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import "./css/App/App.css";
+import SocialIcons from "./components/SocialIcons/SocialIcons";
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
       <div className={"contactWrapper"} id={"contact"}>
         <div className={"contactFlex"}>
           <Contact />
+        </div>
+      </div>
+      <div className={"socialIconsWrapper"}>
+        <div className={"socialIconsFlex"}>
+          <SocialIcons />
         </div>
       </div>
     </div>
