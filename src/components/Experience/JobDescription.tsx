@@ -8,7 +8,7 @@ import DiceBullet from "../DiceBullet/DiceBullet";
  * @constructor
  */
 const JobDescription = () => {
-  let housescopeTitle = "Full Stack Software Developer";
+  let housescopeTitle = "Full Stack Software Development Engineer";
   let housescopeDates = "Oct 2020 - Current";
   let housescopeText = (
     <DiceBullet

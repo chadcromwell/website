@@ -53,7 +53,7 @@ const About = () => {
       <div className={"aboutContent"}>
         <div className={"leftContent"}>
           <div className={"aboutBodyText overpass"}>
-            My name is Chad Cromwell. I'm a software developer from Ontario,
+            My name is Chad Cromwell. I'm a software development engineer from Ontario,
             Canada who loves making and learning new things. From design to
             implementation, I always enjoy a new challenge and finding optimal
             solutions to unique problems.
