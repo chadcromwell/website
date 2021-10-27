@@ -22,14 +22,20 @@ const PortfolioItem = ({ items }: props) => {
       {items.map((item, index) => (
         <div className={"portfolioItemBox"} key={index}>
           <div className={"portfolioItemImage"} />
-          <img src={item.image} alt={item.imageAlt} className={"portfolioItemImage"} />
+          <img
+            src={item.image}
+            alt={item.imageAlt}
+            className={"portfolioItemImage"}
+          />
           <div className={"portfolioItemTitle portfolio-roboto-bold"}>
             {item.title}
           </div>
           <div className={"portfolioItemDescription overpass"}>
             {item.description}
           </div>
-          <Links links={item.links} />
+          <div className={"links"}>
+            <Links links={item.links} />
+          </div>
         </div>
       ))}
     </>

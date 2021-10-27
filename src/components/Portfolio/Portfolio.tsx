@@ -176,10 +176,12 @@ const items = [
 const Portfolio = () => {
   return (
     <div className={"portfolio"}>
-      <div className={"sectionHeader"}>
-        <div className={"titleNumber roboto-thin"}>03.</div>
-        <div className={"sectionTitle roboto-bold"}>A Few Things I've Made</div>
+      <div className={"portfolioSectionHeader"}>
+        <div className={"portfolioTitleNumber roboto-thin"}>03.</div>
+        <div className={"portfolioSectionTitle roboto-bold"}>A Few Things I've Made</div>
+          <div className={"portfolioHorizontalLine"}>
         <HorizontalLine />
+          </div>
       </div>
       <div className={"itemsFlex"}>
         <PortfolioItem items={items} />
