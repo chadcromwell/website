@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.624f3ca5.chunk.css",
+    "main.js": "/static/js/main.77837e05.chunk.js",
+    "main.js.map": "/static/js/main.77837e05.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.837a06cf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.837a06cf.js.map",
+    "static/js/2.07eae22b.chunk.js": "/static/js/2.07eae22b.chunk.js",
+    "static/js/2.07eae22b.chunk.js.map": "/static/js/2.07eae22b.chunk.js.map",
+    "static/js/3.66de7e33.chunk.js": "/static/js/3.66de7e33.chunk.js",
+    "static/js/3.66de7e33.chunk.js.map": "/static/js/3.66de7e33.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.624f3ca5.chunk.css.map": "/static/css/main.624f3ca5.chunk.css.map",
+    "static/js/2.07eae22b.chunk.js.LICENSE.txt": "/static/js/2.07eae22b.chunk.js.LICENSE.txt",
+    "static/media/antAI.644f3ae0.jpg": "/static/media/antAI.644f3ae0.jpg",
+    "static/media/ants.32ac5461.jpg": "/static/media/ants.32ac5461.jpg",
+    "static/media/audioOverlap.dd73e771.jpg": "/static/media/audioOverlap.dd73e771.jpg",
+    "static/media/chadcromwell.f09e5094.jpg": "/static/media/chadcromwell.f09e5094.jpg",
+    "static/media/felix.af7ebb04.jpg": "/static/media/felix.af7ebb04.jpg",
+    "static/media/invasion.86665247.jpg": "/static/media/invasion.86665247.jpg",
+    "static/media/openGL.c1286443.jpg": "/static/media/openGL.c1286443.jpg",
+    "static/media/pathfinder.696760b3.jpg": "/static/media/pathfinder.696760b3.jpg",
+    "static/media/posSystem.72396d1c.jpg": "/static/media/posSystem.72396d1c.jpg",
+    "static/media/tcg.a2282c79.jpg": "/static/media/tcg.a2282c79.jpg",
+    "static/media/tcs.4f695d3e.jpg": "/static/media/tcs.4f695d3e.jpg",
+    "static/media/ufo.008a9d5f.jpg": "/static/media/ufo.008a9d5f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.837a06cf.js",
+    "static/js/2.07eae22b.chunk.js",
+    "static/css/main.624f3ca5.chunk.css",
+    "static/js/main.77837e05.chunk.js"
+  ]
+}
