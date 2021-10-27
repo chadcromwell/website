@@ -52,6 +52,7 @@ const NavBar = () => {
             <Navbar.Toggle
               aria-controls="responsive-navbar-nav"
               style={{ opacity: opacity, transition: "opacity 0.4s ease", minHeight: "5vh", minWidth: "5vh" }}
+            />
             <Navbar.Collapse
               id="responsive-navbar-nav"
               className="justify-content-end"
