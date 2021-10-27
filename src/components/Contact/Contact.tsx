@@ -8,13 +8,15 @@ const email = () => {
 const Contact = () => {
   return (
     <div className={"contact"}>
-      <div className={"sectionHeader"}>
-        <div className={"titleNumber roboto-thin"}>04.</div>
-        <div className={"sectionTitle roboto-bold"}>Get In Touch With Me</div>
+      <div className={"contactSectionHeader"}>
+        <div className={"contactTitleNumber roboto-thin"}>04.</div>
+        <div className={"contactSectionTitle roboto-bold"}>Get In Touch With Me</div>
+          <div className={"contactHorizontalLine"}>
         <HorizontalLine />
+          </div>
       </div>
       <div className={"contactContent"}>
-        <div className={"bodyText overpass"}>
+        <div className={"contactBodyText overpass"}>
           Working on an interesting project? I'd love to hear about it. Send me
           a message!
         </div>

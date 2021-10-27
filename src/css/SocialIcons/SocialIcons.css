@@ -1,7 +1,43 @@
-.socialIcons {
-    color: #5a6d6e;
-    font-size: 2rem;
-    margin-left: 1rem;
-    text-decoration: none;
-    min-width: 2rem;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .socialIcons {
+        color: #5a6d6e;
+        font-size: 2rem;
+        margin-left: 1rem;
+        text-decoration: none;
+        min-width: 2.2rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .socialIcons {
+        color: #5a6d6e;
+        font-size: 2rem;
+        margin-left: 1rem;
+        text-decoration: none;
+        min-width: 2.2rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .socialIcons {
+        color: #5a6d6e;
+        font-size: 2rem;
+        margin-left: 1rem;
+        text-decoration: none;
+        min-width: 2.2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .socialIcons {
+        color: #5a6d6e;
+        font-size: 2rem;
+        margin-left: 1rem;
+        text-decoration: none;
+        min-width: 2rem;
+    }
 }

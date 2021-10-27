@@ -1,88 +1,436 @@
-.aboutMe {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .aboutMe {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .sectionHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -20px;
+        order: 0;
+    }
+
+    .titleNumber {
+        color: #80ffff;
+        font-size: 2rem;
+    }
+
+    .sectionTitle {
+        color: #ffffff;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    .aboutHorizontalLine {
+        display: none;
+    }
+
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .leftContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        order: 3;
+    }
+
+    .rightContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        order: 2;
+    }
+
+    .aboutBodyText {
+        margin-top: 2rem;
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    .listOneHeader {
+        color: #ffffff;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        color: #ffffff;
+    }
+
+    .leftColumn {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .rightColumn {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .whatImWorkingWithLately {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .chadPhoto {
+        display: flex;
+        border-radius: 50%;
+        max-width: 20rem;
+    }
 }
 
-.leftContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    max-width: 40rem;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .aboutMe {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .sectionHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -20px;
+        order: 0;
+    }
+
+    .titleNumber {
+        color: #80ffff;
+        font-size: 2rem;
+    }
+
+    .sectionTitle {
+        color: #ffffff;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    .aboutHorizontalLine {
+        display: none;
+    }
+
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .leftContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        order: 3;
+    }
+
+    .rightContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        order: 2;
+    }
+
+    .aboutBodyText {
+        margin-top: 2rem;
+        font-size: 1rem;
+        color: #ffffff;
+    }
+
+    .listOneHeader {
+        color: #ffffff;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        color: #ffffff;
+    }
+
+    .leftColumn {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .rightColumn {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .whatImWorkingWithLately {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .chadPhoto {
+        display: flex;
+        border-radius: 50%;
+        max-width: 20rem;
+    }
 }
 
-.rightContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .aboutMe {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        order: 0;
+    }
+
+    .sectionHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .titleNumber {
+        color: #80ffff;
+        font-size: 2rem;
+    }
+
+    .sectionTitle {
+        color: #ffffff;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    .aboutHorizontalLine {
+        display: flex;
+        flex: 1;
+    }
+
+    .aboutContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .leftContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        max-width: 40rem;
+        order: 1;
+    }
+
+    .rightContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        order: 2;
+    }
+
+    .chadPhoto {
+        border-radius: 50%;
+        max-width: 20rem;
+    }
+
+    .aboutBodyText {
+        color: #ffffff;
+    }
+
+    .listOneHeader {
+        color: #ffffff;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        color: #ffffff;
+    }
+
+    .leftColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .rightColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-left: 4rem;
+    }
+
+    .whatImWorkingWithLately {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .photo {
+        margin-left: 2rem;
+    }
 }
 
-.chadPhoto {
-    border-radius: 50%;
-    max-width: 25rem;
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .aboutMe {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        order: 0;
+    }
 
-.sectionHeader {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
+    .aboutHorizontalLine {
+        display: flex;
+        flex: 1;
+    }
 
-.sectionTitle {
-    color: #ffffff;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
+    .aboutContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
 
-.titleNumber {
-    color: #80ffff;
-    font-size: 2rem;
-}
+    .leftContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        max-width: 40rem;
+        order: 1;
+    }
 
-.bodyText {
-    color: #ffffff;
-}
+    .rightContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        order: 2;
+    }
 
-.listOneHeader {
-    color: #ffffff;
-}
+    .chadPhoto {
+        border-radius: 50%;
+        max-width: 25rem;
+    }
 
-.list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    color: #ffffff;
-}
+    .sectionHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
 
-.leftColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
+    .sectionTitle {
+        color: #ffffff;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
 
-.rightColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    margin-left: 4rem;
-}
+    .titleNumber {
+        color: #80ffff;
+        font-size: 2rem;
+    }
 
-.whatImWorkingWithLately {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
+    .aboutBodyText {
+        color: #ffffff;
+    }
 
-.photo {
-    margin-left: 2rem;
+    .listOneHeader {
+        color: #ffffff;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        color: #ffffff;
+    }
+
+    .leftColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .rightColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-left: 4rem;
+    }
+
+    .whatImWorkingWithLately {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    .photo {
+        margin-left: 2rem;
+    }
 }

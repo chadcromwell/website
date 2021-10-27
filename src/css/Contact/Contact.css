@@ -12,19 +12,25 @@
     justify-content: center;
 }
 
-.sectionHeader {
+.contactBodyText {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.contactSectionHeader {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    font-size: 2rem;
 }
 
-.sectionTitle {
+.contactSectionTitle {
     color: #ffffff;
     margin-bottom: 2rem;
     margin-left: 1rem;
 }
 
-.titleNumber {
+.contactTitleNumber {
     color: #80ffff;
     font-size: 2rem;
 }

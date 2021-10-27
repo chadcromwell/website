@@ -63,7 +63,6 @@ const JobDescription = () => {
     textAlign: "center",
     texDecoration: "none",
     height: "100%",
-    marginRight: "1rem",
   };
 
   // Selected button style
@@ -76,7 +75,6 @@ const JobDescription = () => {
     textAlign: "center",
     texDecoration: "none",
     height: "100%",
-    marginRight: "1rem",
   };
 
   // Hooks
@@ -148,17 +146,17 @@ const JobDescription = () => {
   return (
     <div className={"content"}>
       <div className={"companyButtons"}>
-        <button onClick={() => buttonClick(0)} style={button0Style}>
+        <button onClick={() => buttonClick(0)} style={button0Style} className={"button"}>
           Housescope
         </button>
         <button
           onClick={() => buttonClick(1)}
           style={button1Style}
-          className={"middleButton"}
+          className={"middleButton button"}
         >
           VIP Research Group
         </button>
-        <button onClick={() => buttonClick(2)} style={button2Style}>
+        <button onClick={() => buttonClick(2)} style={button2Style} className={"button"}>
           Black Media
         </button>
       </div>
