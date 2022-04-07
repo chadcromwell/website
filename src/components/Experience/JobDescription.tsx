@@ -13,30 +13,42 @@ const JobDescription = () => {
   let housescopeText = (
     <DiceBullet
       textArray={[
-        "Refactored edge server monolith into a highly-scalable Dockerized microservice architecture.",
-        "Increased cloud server's connection efficiency by 98.3% leading to a 58x increase in throughput of data from edge servers.",
-        "Lowered cloud server's peak CPU usage by 60% and overall average CPU usage by 92%.",
+        "Led the design and refactor of the Edge Server’s monolithic architecture to a microservice architecture " +
+        "using REST services, Docker, Docker Compose, and AWS. Not only did this meet our scaling needs but it also " +
+        "fully automated deployments which used to take weeks to complete.",
+        "Refactored the Cloud’s upload data endpoint to immediately cache data and respond to callers which increased " +
+        "the Cloud's connection efficiency by 98.3% leading to a 58x increase in throughput of data from Edge Servers.",
+        "Decoupled sending of statistics data from log data. Created a new endpoint and collection on the Cloud to " +
+        "handle statistics data. This lowered the Cloud's peak CPU usage by 60% and overall average CPU usage by 92%.",
         "Reduced study export time by 96%.",
-        "Refactored caching to reduce average UI CPU load from 34% to effectively 0%.",
-        "Implemented and maintained load testing capabilities through AWS EC2. Reducing load testing set up times by 96%.",
-        "Led technical interviews and assisted in hiring decisions as part of the hiring committee.",
-        "Tech stack: Java, Docker, JavaScript, Node, Python, Tensorflow, MongoDB, Meteor, Galaxy, AWS, Atlas, Shell Scripting, Microservice Architecture.",
+        "Disabled Oplogs on our MongoDB as they looked to be severely impacting our Cloud’s performance and we " +
+        "didn’t need Oplog tailing. This reduced study export times by 96%. It also reduced CPU usage on the Cloud UI " +
+        "worker from 100% to 0% while studies were being processed on the Cloud Worker.",
+        "Refactored caching to reduce average Cloud UI Worker CPU load from 34% to effectively 0%.",
+        "Implemented and maintained load testing capabilities through AWS EC2. Wrote Bash scripts to automate load " +
+        "testing which reduced load testing set up times by 96% — from 4 hours to under 10 minutes.",
+        "Created a health check to give insight into Cloud connection issues.",
+        "Led technical interviews and assisted in hiring decisions as part of the hiring committee." +
+        "Assisted in sprint refinement, broke down features and improvements into manageable stories, organized " +
+        "epics, and assisted in planning the project roadmap.",
+        "Fostered a culture that prioritized eliminating tech debt through the use of JSDoc, JavaDoc, " +
+        "code styling guides, PR standards, and comments. ",
+        "Started and led weekly design discussions.",
+        "Admin for organization’s GitHub, DockerHub, and AWS.",
       ]}
     />
   );
 
-  let VIPResearchGroupTitle = "Full Stack Software Developer, Intern";
-  let VIPResearchGroupDates = "Jan 2019 - Apr 2019";
+  let VIPResearchGroupTitle = "Full Stack Software Development Engineer, Intern";
+  let VIPResearchGroupDates = "Jan 2019 - May 2019";
   let VIPResearchGroupText = (
     <DiceBullet
       textArray={[
-        "Developed an interactive leaderboard with a search function that ranked users globally based off of user-selected metrics.",
-        "Developed a statistics dashboard that gave users the ability to view their performance statistics and player progression.",
-        "Developed a card collection book that gave users the ability to browse all of the cards they owned and have yet to collect with various filters, search, and history function.",
-        "Backend development for user authentication, analyzing player statistics, and gathering user data from SQL database.",
-        "Worked in a remote team of globally distributed developers.",
-        "Responsible for establishing version control workflow for the team in order to improve team collaboration and productivity.",
-        "Tech stack: JavaScript, PHP, HTML5, CSS3, Bootstrap, MySQL, and AJAX with JSON.",
+        "Led the design and development of three major features to increase player engagement and retention.",
+        "Developed backend user authentication as well as aggregation and analysis of player statistics.",
+        "Designed and developed UI for the three new features.",
+        "Developed frontend handling and displaying of aggregate player data and statistics.",
+        "Implemented source control with Git in order to improve team collaboration and productivity.",
       ]}
     />
   );
@@ -46,10 +58,10 @@ const JobDescription = () => {
   let blackMediaText = (
     <DiceBullet
       textArray={[
-        "Met with various clients, analyzed their requirements, and developed websites to meet their needs.",
-        "Designed effective marketing materials and strategies for both web and print.",
-        "Photo, film, and audio production for clients and live events.",
-        "Tech stack: JavaScript, PHP, HTML, CSS, Joomla, WordPress, MySQL.",
+        "Consulted with clients gathering use cases to elicit high level requirements and business needs.",
+        "Architected, designed, and developed websites to fulfil client’s requirements.",
+        "Worked across the entire stack from backend REST APIs to frontend working with modern CMS’, including UI & UX design.",
+        "Prototyping and delivering production assets for websites, print, and video.",
       ]}
     />
   );
