@@ -14,27 +14,20 @@ const JobDescription = () => {
     <DiceBullet
       textArray={[
         "Led the design and refactor of the Edge Server’s monolithic architecture to a microservice architecture " +
-        "using REST services, Docker, Docker Compose, and AWS. Not only did this meet our scaling needs but it also " +
-        "fully automated deployments which used to take weeks to complete.",
+        "using REST services, Docker, Docker Compose, and AWS to scale 100x and fully automate deployments which " +
+        "used to take weeks to complete.",
         "Refactored the Cloud’s upload data endpoint to immediately cache data and respond to callers which increased " +
         "the Cloud's connection efficiency by 98.3% leading to a 58x increase in throughput of data from Edge Servers.",
-        "Decoupled sending of statistics data from log data. Created a new endpoint and collection on the Cloud to " +
-        "handle statistics data. This lowered the Cloud's peak CPU usage by 60% and overall average CPU usage by 92%.",
-        "Reduced study export time by 96%.",
-        "Disabled Oplogs on our MongoDB as they looked to be severely impacting our Cloud’s performance and we " +
-        "didn’t need Oplog tailing. This reduced study export times by 96%. It also reduced CPU usage on the Cloud UI " +
-        "worker from 100% to 0% while studies were being processed on the Cloud Worker.",
+        "Decoupled sending of statistics data from log data which lowered the Cloud's peak CPU usage by 60% and " +
+        "average CPU usage by 92%.",
         "Refactored caching to reduce average Cloud UI Worker CPU load from 34% to effectively 0%.",
-        "Implemented and maintained load testing capabilities through AWS EC2. Wrote Bash scripts to automate load " +
-        "testing which reduced load testing set up times by 96% — from 4 hours to under 10 minutes.",
-        "Created a health check to give insight into Cloud connection issues.",
-        "Led technical interviews and assisted in hiring decisions as part of the hiring committee." +
+        "Implemented and maintained load testing capabilities through AWS EC2. Automated load testing which reduced " +
+        "load testing set up times by 96% — from 4 hours to under 10 minutes.",
+        "Led technical interviews and assisted in hiring decisions as part of the hiring committee.",
         "Assisted in sprint refinement, broke down features and improvements into manageable stories, organized " +
         "epics, and assisted in planning the project roadmap.",
-        "Fostered a culture that prioritized eliminating tech debt through the use of JSDoc, JavaDoc, " +
-        "code styling guides, PR standards, and comments. ",
-        "Started and led weekly design discussions.",
-        "Admin for organization’s GitHub, DockerHub, and AWS.",
+        "Fostered a culture that prioritized eliminating tech debt through the use of documentation " +
+        "style guides, and PR standards",
       ]}
     />
   );
@@ -53,11 +46,12 @@ const JobDescription = () => {
     />
   );
 
-  let blackMediaTitle = "Full Stack Developer & Graphic Designer";
-  let blackMediaDates = "2006 - 2010";
+  let blackMediaTitle = "Co-Founder & Full Stack Developer";
+  let blackMediaDates = "Jan 2006 - Jul 2010";
   let blackMediaText = (
     <DiceBullet
       textArray={[
+        "A web development startup I founded with a friend fresh out of high school.",
         "Consulted with clients gathering use cases to elicit high level requirements and business needs.",
         "Architected, designed, and developed websites to fulfil client’s requirements.",
         "Worked across the entire stack from backend REST APIs to frontend working with modern CMS’, including UI & UX design.",
